@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Email form test</title>
+</head>
+<body>
+	<h1>Email form test XHTML 1</h1>
+
+	<form id="form1" action="result_page.html" method="get">
+		<div style="margin-bottom:10px">
+			<label for="text">Text field</label><br />
+			<input required="required" type="text" id="text" name="text" value="Some text" />
+		</div>
+
+		<div style="margin-bottom:10px">
+			<input type="radio" id="radio1" name="radio" value="radio 1 value" checked="checked" />
+			<label for="radio1">Radio button 1</label><br />
+			<input type="radio" id="radio2" name="radio" value="radio 2 value" />
+			<label for="radio2">Radio button 2</label>
+		</div>
+
+		<div style="margin-bottom:10px">
+			<input type="checkbox" id="checkbox" name="checkbox" value="checkbox value" checked="checked" />
+			<label for="checkbox">Checkbox</label>
+		</div>
+
+		<div style="margin-bottom:10px">
+			<label for="select">Select</label><br />
+			<select id="select" name="select">
+				<option value="select option 1">Select option 1</option>
+				<option value="select option 2" selected="selected">Select option 2</option>
+				<option value="select option 3">Select option 3</option>
+			</select>
+		</div>
+
+		<div style="margin-bottom:10px">
+			<label for="textarea">Textarea</label><br />
+			<textarea cols="60" rows="5" name="textarea" id="textarea">More text</textarea>
+		</div>
+
+		<div>
+			<button type="submit" name="Submit">Submit</button>
+		</div>
+	</form>
+</body>
+</html>

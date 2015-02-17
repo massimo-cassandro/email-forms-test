@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Email form test - result page</title>
+</head>
+<body>
+	<h1>Email form test - result page</h1>
+
+	<div id="result"></div>
+
+	<script type="text/javascript">
+
+		if(window.location.search) {
+			var get_data_array = window.location.search.substr(1).replace(/\+/g, " ").split("&"),
+				_result='', pair;
+
+			get_data_array.forEach(function (data) {
+				pair = data.split('=');
+				_result += '<tr><th>' + pair[0] + '</th><td>' + pair[1] +'</td></tr>';
+			});
+
+			document.getElementById('result').innerHTML = '<table border="1" cellpadding="5" cellspacing="0">' +
+				_result + '</table>';
+		} else {
+			document.getElementById('result').innerHTML = 'Nothing';
+		}
+
+	</script>
+</body>
+</html>
