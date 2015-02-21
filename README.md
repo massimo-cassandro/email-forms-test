@@ -7,6 +7,7 @@ Test result.
 |--------------------------------|:-----------------:|:------------------:|
 | Thunderbird 31 (OSX)           |         Y         |        Y (2)       |
 | Apple Mail 8.2 (OSX)           |         Y         |        Y (1)       |
+| Opera Mail 1 (OSX)             |         Y         |          Y         |
 | Windows Live Mail 2012 (win 7) |         Y         |      Y (1) (3)     |
 | Outlook 2013 (Win 7)           |         N         |          N         |
 | Outlook.com (web)              |         Y         |          N         |
@@ -26,4 +27,5 @@ Test result.
 2. Fields with `required` attributes are highlighted if empty, but the form can be submitted anyway
 3. Alert on submit
 4. Input text and textarea fields are not editable
+5. Result page is opened inside the app
 
